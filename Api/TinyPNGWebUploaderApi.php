@@ -24,14 +24,6 @@ class TinyPNGWebUploaderApi extends TinyPNGApi
 		;
 		$this->object = $serializer->deserialize($data, Upload::class, 'json');
 
-		$response = new Response();
-		$response
-			->setData($this->data)
-			->setObject($this->object)
-			->setUrl($this->urlAnnotation)
-			->setRequest($this->request)
-		;
-
-		return $response;
+		return $this->object;
 	}
 }
