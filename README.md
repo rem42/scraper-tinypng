@@ -46,7 +46,7 @@ You can also use a web upload and you only need tu set an url :
     
     $request = new TinyPNGWebUploaderRequest();
     $request
-    	->setUrl(file_get_contents('url to your file'))
+    	->setUrl('url to your file')
     	->setUserAgent('Need a browser user agent to work !')
     ;
     
